@@ -1,0 +1,26 @@
+
+markdown: kramdown
+permalink: /:title
+
+collections:
+  blog_categories:
+    output: true
+    permalink: /category/:name/
+
+sass:
+  sass_dir: css
+  style: compressed
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  -
+    scope:
+      path: ""
+      type: blog_categories
+    values:
+      layout: categories
