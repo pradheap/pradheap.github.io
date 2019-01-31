@@ -1,0 +1,8 @@
+<div class="card col-sm-6 border-white">
+    <div class="card-body">
+        <p class="card-text"><small class="text-muted">{{ include.date | date: '%Y-%m-%d'}}</small></p>
+        <h4 class="card-title">{{ include.title | truncate: 70}}</h4>
+        <p class="card-text">{{ include.teaser | truncate: 200 }}</p>
+        <a href="{{ post.url }}"><b>Read More</b></a>
+    </div>
+</div>

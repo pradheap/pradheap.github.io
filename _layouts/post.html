@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
-<br/>
 {% for category in page.categories %}
   {% assign categories = site.blog_categories | where: "slug", category %}
-  {% capture category_links %}{{ category_links }}<a href ="{{ categories[0].url }}"><b>{{ categories[0].title }}</b></a> {% endcapture %}
+  {% capture category_links %}{{ category_links }}<a href ="{{ categories[0].url }}">{{ categories[0].title }}</a> {% endcapture %}
 {% endfor %}
+<h5 class="mt-4">
 {{category_links}}
+</h5>
 <h1>{{ page.title }}</h1>
 <p class="font-weight-light">{{ page.date | date_to_string }}</p>
 <br/>
@@ -14,6 +15,7 @@ layout: default
 <div class="post">
   {{ content }}
 </div>
-<div>
-  <p>Tags:{{ page.tags }}</p>
-</div>
+
+{% if page.comments %}
+  {% include comments.html disqus_id=page.path url=page.url%}
+{% endif %}

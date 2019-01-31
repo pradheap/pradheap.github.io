@@ -7,22 +7,14 @@ title: Pradheap's Blog
 <br/>
 {% include title_header.html title=page.title subtitle=page_subtitle %}
 
-<div class="text-justify">
+<div>
     {% for post in site.posts %}
       {% capture post_0 %}
       {{ post_0 }}
-      <div class="card col-sm-6">
-        <div class="card-body">
-          <h5 class="card-title">{{ post.title }}</h5>
-          <p class="card-text">{{ post.teaser }}</p>
-          <a href="{{ post.url }}"><b>Read More</b></a>
-          <p class="card-text"><small class="text-muted">{{ post.date | date: '%Y-%m-%d'}}</small></p>
-        </div>
-      </div>
+      {% include card.html title=post.title teaser=post.teaser date=post.date %}
       {% endcapture %}
       {% endfor %}
         <div class="row">
-            {{ post_0 }}
             {{ post_0 }}
         </div>
 </div>
