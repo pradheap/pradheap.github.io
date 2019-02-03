@@ -1,0 +1,13 @@
+<div class="card {{include.css-classes}}" style="width: 18rem;">
+    <div class="card-header">
+        Two Bits
+    </div>
+    <ul class="list-group list-group-flush" style="font-size: smaller">
+        <li class="list-group-item">Author: <span class="font-weight-bold">{{ include.author }}</span></li>
+        <li class="list-group-item">Published: <span class="font-weight-bold">{{ include.pub_date }}</span></li>
+        <li class="list-group-item">I Read On: <span class="font-weight-bold">{{ include.completed_on }}</span></li>
+        <li class="list-group-item">Pages: <span class="font-weight-bold">{{ include.pages }}</span></li>
+        <li class="list-group-item">Audio book: <span class="font-weight-bold">{{ include.audio_book }}</span></li>
+        <li class="list-group-item">ISBN: <span class="font-weight-bold">{{ include.isbn }}</span></li>
+    </ul>
+</div>

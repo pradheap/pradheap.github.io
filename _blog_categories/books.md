@@ -1,4 +1,4 @@
 ---
 title: Books
-headline: Books are the best!
+headline: Mostly about the books I've read.
 ---

@@ -2,19 +2,20 @@
 layout: default
 ---
 
-{% capture page_subtitle %}Articles by {{ page.slug }} category{% endcapture %}
 <br/>
-{% include title_header.html title=page.title subtitle=page_subtitle %}
+{% include title_header.html title=page.title subtitle=page.headline %}
 
 <div>
   {% if site.categories[page.slug] %}
     {% for post in site.categories[page.slug] %}
-      {% capture post_year %}{{ post.date | date: '%Y' }}{% endcapture %}
-      {% if forloop.first %}
-        <h3 class="text-center">{{ post_year }}</h3>
-        {% include card.html title=post.title teaser=post.teaser date=post.date %}
-      {% endif %}
+      {% capture post_0 %}
+        {{ post_0 }}
+        {% include card.html title=post.promo_title teaser=post.teaser date=post.date %}
+      {% endcapture %}
     {% endfor %}
+    <div class="row">
+      {{ post_0 }}
+    </div>
   {% else %}
     <p>There are no posts in this category.</p>
   {% endif %}

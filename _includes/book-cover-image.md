@@ -1,0 +1,1 @@
+![{{include.alt}}]({{include.src}}){: .rounded}{: .mx-auto}{: .pb-4}{: .d-block}
