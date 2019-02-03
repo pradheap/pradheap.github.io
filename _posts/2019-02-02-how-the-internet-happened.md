@@ -4,7 +4,7 @@ promo_title: "How the Internet Happened? - I Guarantee a Fun Read!"
 date: 2019-02-02
 categories: [books]
 teaser: "It seems that every popular site offers a form of instant gratification and infinite selection."
-comments: false
+comments: true
 ---
 
 {% include book-cover-image.md alt="Better Book Cover" src="https://res.cloudinary.com/pradheap/image/upload/v1549132211/how-the-internet-happened.jpg"
