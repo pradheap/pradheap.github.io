@@ -1,6 +1,6 @@
 ---
 title: "How the Internet Happened: From Netscape to the iPhone - Book Review"
-promo_title: "How the Internet Happened? - I Guarantee a Fun Read!"
+promo_title: "How the Internet Happened? - I Guarantee You a Fun Read!"
 date: 2019-02-02
 categories: [books]
 teaser: "It seems that every popular site offers a form of instant gratification and infinite selection."
@@ -13,7 +13,7 @@ comments: true
 {% include book-meta-card.html
     author='Brian McCullough'
     pub_date='22 Oct, 2018'
-    completed_on='Feb 3, 2019'
+    completed_on='3 Feb, 2019'
     pages='400'
     audio_book='13 hours 29 mins'
     isbn='9781631493072'

@@ -13,7 +13,7 @@ comments: true
 {% include book-meta-card.html
     author='Atul Gawande'
     pub_date='3 Apr, 2007'
-    completed_on='Jan 16, 2019'
+    completed_on='16 Jan, 2019'
     pages='273'
     audio_book='8 hours (appx)'
     isbn='9780805082111'
