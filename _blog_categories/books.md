@@ -1,4 +1,4 @@
 ---
 title: Books
-headline: Mostly about the books I've read.
+headline: Mostly about the books I've read
 ---
