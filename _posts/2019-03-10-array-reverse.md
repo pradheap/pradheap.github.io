@@ -7,7 +7,7 @@ teaser: "Reverse an array in-place"
 comments: true
 ---
 
-Problem: Reverse a given array in-place.
+**Problem:** Reverse a given array in-place.
 
 ```
 Input = [1, 2, 3, 4, 5, 6], Output = [6, 5, 4, 3, 2, 1]
@@ -31,13 +31,27 @@ def reverse_array(arr):
 To write our own method, we're going to swap elements from one end with the other end.
 
 ```python
-def reverse_array(arr):
+def reverse_array_v1(arr):
     left = 0
     right = len(arr) - 1
     while left < right:
         arr[left], arr[right] = arr[right], arr[left]
         left += 1
         right -= 1
+```
+
+Let's try to solve this via recursion, but it returns a copy of the array that is reversed and the given array remains unchanged.
+
+A recursion procedure consists of a base case or terminating case and recursive rules or reduction steps that converges to the base case. 
+
+The base case is where we return the given array if it contains just a single element. And a reduction step we can think of is swapping elements from both the ends of the array. Instead of swapping all of the elements in one call, we do one swap per call and defer the remaning swaps to the recursive calls. Each call performs one swapping until the base case. Once the base case is reached, we get the result back.
+
+```python
+def reverse_array_v2(arr):
+    if len(arr) < 2:
+        return arr
+
+    return [arr[len(arr) - 1]] + reverse_array_v2(arr[1:(len(arr) - 1)]) + [arr[0]]
 ```
 
 Full source code is [here](https://github.com/pradheap/coding-problems/blob/master/array_reverse/source.py) and Unit tests are [here](https://github.com/pradheap/coding-problems/blob/master/array_reverse/test.py).
