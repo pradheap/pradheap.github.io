@@ -1,0 +1,46 @@
+
+h3 {
+    text-align: center;
+    padding: 20px;
+}
+
+#hermann-grid {
+    margin: 20px;
+    width: 600px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#scintillating-grid {
+    margin: 20px;
+    width: 600px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hermann-square {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: black;
+}
+
+.scintillating-square {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: black;
+}
+
+.scintillating-square::after {
+    content: "";
+    width: 8px;
+    top: 78px;
+    left: -22px;
+    position: relative;
+    border-radius: 50%;
+    height: 9px;
+    padding: 4px 13px;
+    background-color: white;
+}

@@ -1,0 +1,59 @@
+---
+layout: default
+title: About Pradheap
+meta_description: Optical Illusions using CSS and plain Javascript
+page_css: optical-illusions-1.css
+syntax_highlight: true
+---
+
+<h3>Optical Illusions</h3>
+<p class="text-center">An attempt to create optical illusions with CSS and JS. Wikipedia  <a href ="https://en.wikipedia.org/wiki/Grid_illusion" target="_blank">link</a></p>
+<h4>1. Hermann Grid Illusion</h4>
+<div id="hermann-grid">
+</div>
+
+<strong>Idea:</strong>
+<p>We could achieve this by placing a number of square div elements inside a container div with uniform spacing.</p>
+<strong>Implementation</strong>
+<p>
+    Add a container div with relatively large width and height. Append a series of square divs via a JS function as children to the container div. A div is a block element hence it should be arranged inline. We can accomplish this in two ways:
+    <ol>
+        <li>
+            Using <code>display: inline-block'</code> on individual divs.
+        </li>
+        <li>
+            or Using flexbox <code>display: flex; flex-wrap: wrap;</code> on the container div.
+        </li>
+    </ol> 
+
+</p>
+<strong>JS Function </strong>
+<pre>
+    <code class="javascript">
+        var hermann = document.getElementById('hermann-grid');
+        var hermannSquare = document.createElement('div');
+        hermannSquare.className = "hermann-square";
+        hermann.appendChild(hermannSquare);
+    </code>
+</pre>
+<strong>CSS gotcha:</strong>
+<p>When using <code>display: inline-block'</code>, you run into <a href="https://css-tricks.com/fighting-the-space-between-inline-block-elements/" target="_blank">this</a> gotcha that adds some extra space inbetween the divs.Use <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">flexbox</a> to avoid it.</code></p>
+
+<h4>2. Scintillating grid Illusion</h4> 
+<div id="scintillating-grid">
+</div>
+
+<script type="text/javascript">
+    (function() {
+        var hermann = document.getElementById('hermann-grid');
+        var scintillating = document.getElementById('scintillating-grid');
+        for(var i = 0; i < 36; i++) {
+            var hermannSquare = document.createElement('div');
+            hermannSquare.className = "hermann-square";
+            hermann.appendChild(hermannSquare);
+            var scintillatingSquare = document.createElement('div');
+            scintillatingSquare.className = "scintillating-square";
+            scintillating.appendChild(scintillatingSquare);
+        }
+    })();
+</script>
