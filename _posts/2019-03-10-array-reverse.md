@@ -36,7 +36,7 @@ def reverse_array(arr):
   return reversed(arr)
 ```
 
-To write our own method, we're going to swap elements from one end with the other end.
+To write our own method, we're going to swap elements from one end to the other.
 
 ```python
 def reverse_array_v1(arr):
@@ -48,11 +48,11 @@ def reverse_array_v1(arr):
         right -= 1
 ```
 
-Let's try to solve this via recursion, but it reverses and returns a copy of the array and also the given array remains unchanged.
+Let's try to solve this via recursion. We will reverse and return a copy of the array but the given array remains unchanged.
 
-A recursion procedure consists of a base case or terminating case and recursive rules or reduction steps that converges to the base case. 
+A recursion procedure consists of a base case or terminating case and recursive rules or reduction steps that converges to the base case.
 
-The base case is where we return the given array if it contains just a single element. And a reduction step we can think of is swapping elements from both the ends of the array. Instead of swapping all of the elements in one call, we do one swap per call and defer the remaining swaps to the recursive calls. Each call performs one swapping until the base case. Once the base case is reached, we get the result back.
+The base case here is to return the given array if it contains just a single element. And a reduction step we can think of is swapping elements from one end to the other end. Instead of swapping all of the elements in one call, we do one swap per call and call the same function with a reduced/simplified input. In this case, it's the reduced size (n-2) of the array that gets passed in each recursive call. Each call performs a swapping until the base case. Once the base case is reached, we return the result.
 
 ```python
 def reverse_array_v2(arr):

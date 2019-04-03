@@ -33,7 +33,7 @@ h3 {
     background-color: black;
 }
 
-.scintillating-square::after {
+.scintillating-square:after {
     content: "";
     width: 8px;
     top: 78px;
@@ -43,4 +43,233 @@ h3 {
     height: 9px;
     padding: 4px 13px;
     background-color: white;
+}
+
+#cafe-wall {
+    margin: 20px;
+    width: 600px;
+}
+
+.cafe-wall-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cafe-wall-tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid gray;
+}
+
+.cafe-wall-tile.odd{
+    background-color: black;
+}
+
+.cafe-wall-row:nth-child(4n + 1) > .cafe-wall-tile:first-child  {
+    width: 10px;
+}
+
+.cafe-wall-row:nth-child(4n + 1) > .cafe-wall-tile:last-child  {
+    width: 40px;
+}
+
+.cafe-wall-row:nth-child(2n + 2) > .cafe-wall-tile:first-child  {
+    width: 25px;
+}
+
+.cafe-wall-row:nth-child(2n + 2) > .cafe-wall-tile:last-child  {
+    width: 25px;
+}
+
+.cafe-wall-row:nth-child(4n + 3) > .cafe-wall-tile:first-child  {
+    width: 40px;
+}
+
+.cafe-wall-row:nth-child(4n + 3) > .cafe-wall-tile:last-child  {
+    width: 10px;
+}
+
+#ebbinghaus-container {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 50px;
+}
+
+#big-flower {
+    display: inline-block;
+}
+
+#small-flower {
+    display: inline-block;
+}
+
+#stigma1 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    left: 110px;
+    top: 35px;
+}
+
+#petal1 {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    left: 42px;
+    top: -10px;
+    position: relative;
+}
+
+#petal1:before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -112px;
+    top: 98px;
+}
+
+#petal1:after {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: 140px;
+    top: 40px;
+}
+
+#petal2 {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    left: 105px;
+    top: 77px;
+    position: relative;
+}
+
+#petal2:before {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -140px;
+    top: -45px;
+}
+
+#petal2:after {
+    content: "";
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: 110px;
+    top: -100px;
+}
+
+#stigma2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: orange;
+    position: relative;
+    left: 375px;
+    top: 0px;
+}
+
+#petalA {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    left: 350px;
+    top: -15px;
+    position: relative;
+}
+
+#petalA:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -9px;
+    top: -39px;
+}
+
+#petalA:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: 32px;
+    top: 20px;
+}
+
+#petalB {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    left: 441px;
+    top: -64px;
+    position: relative;
+}
+
+#petalB:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -22px;
+    top: 32px;
+}
+
+#petalB:after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -7px;
+    top: -39px;
+}
+
+#petalC {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    left: 401px;
+    top: -155px;
+    position: relative;
+}
+
+#petalC:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: lightsteelblue;
+    position: absolute;
+    left: -40px;
+    top: 6px;
 }
