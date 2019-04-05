@@ -15,7 +15,3 @@ layout: default
 <div class="post">
   {{ content }}
 </div>
-
-{% if page.comments %}
-  {% include comments.html disqus_id=page.path url=page.url%}
-{% endif %}
