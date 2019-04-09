@@ -83,6 +83,9 @@ Wikipedia  <a href ="https://en.wikipedia.org/wiki/Ebbinghaus_illusion" target="
             hermann.appendChild(hermannSquare);
             var scintillatingSquare = document.createElement('div');
             scintillatingSquare.className = "scintillating-square";
+            if (i < 30 && (i % 6) !== 0) {
+                scintillatingSquare.className += " scintillating-square-circle";
+            }
             scintillating.appendChild(scintillatingSquare);
         }
         // Cafe Wall Illusion

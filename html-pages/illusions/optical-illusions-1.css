@@ -27,7 +27,7 @@
     background-color: black;
 }
 
-.scintillating-square:after {
+.scintillating-square-circle:after {
     content: "";
     width: 8px;
     top: 78px;
@@ -95,6 +95,8 @@
 }
 
 #small-flower {
+    position: relative;
+    top: -15px;
     display: inline-block;
 }
 
