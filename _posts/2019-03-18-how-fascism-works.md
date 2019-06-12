@@ -7,7 +7,7 @@ teaser: "A small book on Fascism with the current US political backdrop"
 comments: true
 ---
 
-{% include book-cover-image.md alt="How Fascism Works Book Cover" src="https://res.cloudinary.com/pradheap/image/upload/v1552973948/38255329.jpg"
+{% include book-cover-image.md alt="How Fascism Works Book Cover" src="https://res.cloudinary.com/pradheap/image/upload/v1552973948/how-fascism-works.jpg"
 %}
 
 {% include book-meta-card.html
